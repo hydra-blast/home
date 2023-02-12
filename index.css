@@ -19,6 +19,8 @@ header {
     background-color: #430caf;
     color: white;
     border-radius: 10px;
+    position: fixed;
+    z-index: 1;
 } header ul {
     display: flex;
     align-items: center;
