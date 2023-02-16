@@ -7,15 +7,18 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0; 
+    background-color: black;
 }
 
 h1 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 a {
     text-decoration: none;
     color: white;
+} a:hover {
+    text-shadow: 0 0 10px #fff;
 }
 
 header {
@@ -36,22 +39,95 @@ header {
     list-style: none;
     margin-right: 15px;
 } header img {
+    height: 75px;
+    width: 75px;
     border-radius: 10px;
 }
 
-.tiktok {
+.social {
     width: 80%;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #7F669D;
+    border-radius: 10px;
+    margin: 10px 0; 
+} 
+
+.tiktok {
+    background: linear-gradient(
+        90deg,
+        #010101,
+        #69c9d0,
+        #ffffff,
+        #ee1d52
+    );
     color: white;
-} .tiktok blockquote {
+}.tiktok blockquote {
     box-shadow: 10px 10px 25px 1px #303030;
     border: none;
     border-radius: 10px;
     width: 90%;
+} .tiktok h1 {
+    text-shadow: 1px 1px 5px #010101;
+}
+
+.youtube {
+    background: linear-gradient(
+        -90deg,
+        #90030c,
+        #bf2626,
+        #ee0f0f,
+        #ecb7b7,
+        #e1e1e1
+    );
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+} .youtube h1 {
+    text-shadow: 1px 1px 5px #010101;
+} .subs {
+    border: none;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+} #subscribe {
+    margin-top: 10px;
+    margin-left: 10px; 
+    font-size: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 5px #010101;
+} #subscribe:hover, #view:hover {
+    cursor: pointer;
+} #view {
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: #3ea6ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 5px #010101;
+}
+
+.spotify {
+    color: white;
+    background: linear-gradient(
+        -90deg,
+        #1db954,
+        #1ed760,
+        #ffffff,
+        #181413
+    );
+} .spotify h1 {
+    text-shadow: 1px 1px 5px #010101;
+} iframe {
+    width: 80%;
 }
 
 .new-flavour {
@@ -61,8 +137,25 @@ header {
     width: 100%;
 }
 
+.about {
+    margin-top: 70px; 
+    color: white;
+    text-align: center;
+}
+
 @media(max-width:480px) {
     .tiktok, .new-flavour {
         width: 100%;
+    }
+
+    header {
+        height: 50px;
+        align-items: center;
+    } header img {
+        height: 100%;
+    }
+
+    .new-flavour {
+        margin-top: 40px;
     }
 } 
